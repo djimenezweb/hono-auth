@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx --env-file=.env --watch ./src/main.ts",
-    "start": "npx prisma migrate deploy && node ./dist/main.mjs",
+    "start": "npx prisma migrate --schema=./dist/schema.prisma deploy && node ./dist/main.mjs",
     "build": "pkgroll && cp ./src/prisma/schema.prisma ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
