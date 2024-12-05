@@ -3,7 +3,7 @@ import { createMiddleware } from 'hono/factory';
 import { verify } from 'hono/jwt';
 import env from '../env';
 import { AccessTokenPayload, RefreshTokenPayload, UserPayload } from '../types';
-import prisma from '../prisma/client.ts';
+import prisma from '../../prisma/client.ts';
 import { generateTokens } from '../utils/generateTokens.ts';
 import {
   accessTokenCookiesOptions,

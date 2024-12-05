@@ -1,6 +1,6 @@
 import { createFactory } from 'hono/factory';
 import { UserPayload } from '../types';
-import prisma from '../prisma/client';
+import prisma from '../../prisma/client';
 import { STATUS } from '../config/status';
 import { deleteCookie } from 'hono/cookie';
 import { cookiesOptions } from '../config/cookiesOptions';
