@@ -2,7 +2,7 @@ import { createFactory } from 'hono/factory';
 import { zValidator } from '@hono/zod-validator';
 import { userFormSchema, UserPayload } from '../types.ts';
 import { comparePasswords, hashPassword } from '../utils/bcrypt.ts';
-import prisma from '../../prisma/client.ts';
+import prisma from '../prisma/client.ts';
 import { parse } from '../utils/userAgentParser.ts';
 import { refreshTokenExpiration } from '../config/expireOptions.ts';
 import { deleteCookie, setCookie } from 'hono/cookie';

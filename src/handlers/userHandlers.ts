@@ -1,7 +1,7 @@
 import { createFactory } from 'hono/factory';
 import { UserPayload } from '../types';
 import { STATUS } from '../config/status';
-import prisma from '../../prisma/client';
+import prisma from '../prisma/client';
 import { FORBIDDEN, NOT_FOUND } from '../http-status-codes';
 
 const factory = createFactory<{ Variables: { user: UserPayload } }>();
