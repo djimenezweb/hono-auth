@@ -1,12 +1,12 @@
 {
   "name": "hono-auth",
   "version": "1.0.0",
-  "main": "./dist/main.mjs",
+  "main": "./src/main.ts",
   "type": "module",
   "scripts": {
     "dev": "tsx --env-file=.env --watch ./src/main.ts",
-    "start": "node ./dist/main.mjs",
-    "build": "npm install && pkgroll && npx prisma generate && npx prisma migrate deploy",
+    "build": "npm install && npx prisma migrate deploy",
+    "start": "tsx ./src/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
-    "pkgroll": "^2.5.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }

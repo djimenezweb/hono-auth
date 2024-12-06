@@ -20,7 +20,7 @@ const onError: ErrorHandler = (err, c) => {
     {
       status: STATUS.ERROR,
       time: new Date().getTime(),
-      message: 'An error ocurred',
+      message: err.message,
     },
     statusCode
   );
