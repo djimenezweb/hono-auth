@@ -4,14 +4,10 @@ Basic custom username/password auth system.
 
 This is a replica of the [MERN Auth](https://github.com/djimenezweb/mern-auth) server, but using **Prisma/SQLite** and **Hono** instead of Mongo and Express.
 
-Live demo: https://mern-auth-o1gw.onrender.com
-
 - Session based
 - Role authorization (user, admin)
 - Authenticated users can log in and see their own open sessions.
 - Admins can delete users, invalidate sessions and close other user's sessions.
-
-[![Screen capture](https://raw.githubusercontent.com/djimenezweb/mern-auth/refs/heads/master/client/public/screenshot.png)](https://mern-auth-o1gw.onrender.com)
 
 ## Back End
 
